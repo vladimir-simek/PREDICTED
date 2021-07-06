@@ -1,0 +1,193 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Scenes/MainMenu/MainMenu.gd" type="Script" id=1]
+[ext_resource path="res://Assets/UI/Buttons/OrangeButton/RedButton_100x25.png" type="Texture" id=2]
+[ext_resource path="res://AssetsRaw/Misc/CinzelDecorative-Regular.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://AssetsRaw/0x72_DungeonTilesetII_v1.4.png" type="Texture" id=4]
+[ext_resource path="res://AssetsRaw/Misc/CinzelDecorative-Bold.ttf" type="DynamicFontData" id=5]
+
+[sub_resource type="TileSet" id=2]
+0/name = "0x72_DungeonTilesetII_v1.4.png 0"
+0/texture = ExtResource( 4 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 32, 16, 16, 16 )
+0/tile_mode = 1
+0/autotile/bitmask_mode = 0
+0/autotile/bitmask_flags = [  ]
+0/autotile/icon_coordinate = Vector2( 0, 0 )
+0/autotile/tile_size = Vector2( 16, 16 )
+0/autotile/spacing = 0
+0/autotile/occluder_map = [  ]
+0/autotile/navpoly_map = [  ]
+0/autotile/priority_map = [  ]
+0/autotile/z_index_map = [  ]
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "0x72_DungeonTilesetII_v1.4.png 1"
+1/texture = ExtResource( 4 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 64, 240, 16, 16 )
+1/tile_mode = 1
+1/autotile/bitmask_mode = 0
+1/autotile/bitmask_flags = [  ]
+1/autotile/icon_coordinate = Vector2( 0, 0 )
+1/autotile/tile_size = Vector2( 16, 16 )
+1/autotile/spacing = 0
+1/autotile/occluder_map = [  ]
+1/autotile/navpoly_map = [  ]
+1/autotile/priority_map = [  ]
+1/autotile/z_index_map = [  ]
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+
+[sub_resource type="DynamicFont" id=1]
+size = 110
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 128
+font_data = ExtResource( 5 )
+
+[node name="MainMenu" type="Node2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 539.997 ],
+"_edit_vertical_guides_": [ 960.0 ]
+}
+
+[node name="TileMap" type="TileMap" parent="."]
+scale = Vector2( 10, 10 )
+tile_set = SubResource( 2 )
+cell_size = Vector2( 16, 16 )
+cell_custom_transform = Transform2D( 16, 0, 0, 16, 0, 0 )
+format = 1
+tile_data = PoolIntArray( 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 6, 0, 0, 7, 0, 0, 8, 0, 0, 9, 0, 0, 10, 0, 0, 11, 0, 0, 65536, 0, 0, 65537, 0, 0, 65538, 0, 0, 65539, 0, 0, 65540, 0, 0, 65541, 0, 0, 65542, 0, 0, 65543, 0, 0, 65544, 0, 0, 65545, 0, 0, 65546, 0, 0, 65547, 0, 0, 131072, 0, 0, 131073, 0, 0, 131074, 0, 0, 131075, 0, 0, 131076, 0, 0, 131077, 0, 0, 131078, 0, 0, 131079, 0, 0, 131080, 0, 0, 131081, 0, 0, 131082, 0, 0, 131083, 0, 0, 196608, 0, 0, 196609, 0, 0, 196610, 0, 0, 196611, 0, 0, 196612, 0, 0, 196613, 0, 0, 196614, 0, 0, 196615, 0, 0, 196616, 0, 0, 196617, 0, 0, 196618, 0, 0, 196619, 0, 0, 262144, 0, 0, 262145, 0, 0, 262146, 0, 0, 262147, 0, 0, 262148, 0, 0, 262149, 0, 0, 262150, 0, 0, 262151, 0, 0, 262152, 0, 0, 262153, 0, 0, 262154, 0, 0, 262155, 0, 0, 327680, 0, 0, 327681, 0, 0, 327682, 0, 0, 327683, 0, 0, 327684, 0, 0, 327685, 0, 0, 327686, 0, 0, 327687, 0, 0, 327688, 0, 0, 327689, 0, 0, 327690, 0, 0, 327691, 0, 0, 393216, 0, 0, 393217, 0, 0, 393218, 0, 0, 393219, 0, 0, 393220, 0, 0, 393221, 0, 0, 393222, 0, 0, 393223, 0, 0, 393224, 0, 0, 393225, 0, 0, 393226, 0, 0, 393227, 0, 0 )
+
+[node name="ExitButton" type="RichTextLabel" parent="."]
+margin_left = 664.615
+margin_top = 830.694
+margin_right = 1257.61
+margin_bottom = 978.69
+custom_fonts/normal_font = SubResource( 1 )
+bbcode_enabled = true
+bbcode_text = "[center]Exit[/center]"
+text = "Exit"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="ExitButton" type="TextureButton" parent="ExitButton"]
+show_behind_parent = true
+margin_left = 4.0
+margin_top = -0.109131
+margin_right = 593.0
+margin_bottom = 147.891
+texture_normal = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="SettingsButton" type="RichTextLabel" parent="."]
+margin_left = 664.615
+margin_top = 665.694
+margin_right = 1257.61
+margin_bottom = 813.694
+custom_fonts/normal_font = SubResource( 1 )
+bbcode_enabled = true
+bbcode_text = "[center]Settings[/center]"
+text = "Settings"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="SettingsButton" type="TextureButton" parent="SettingsButton"]
+show_behind_parent = true
+margin_left = 4.0
+margin_top = -0.109131
+margin_right = 593.0
+margin_bottom = 147.891
+texture_normal = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="PlayButton" type="RichTextLabel" parent="."]
+margin_left = 664.615
+margin_top = 501.694
+margin_right = 1257.61
+margin_bottom = 649.694
+custom_fonts/normal_font = SubResource( 1 )
+bbcode_enabled = true
+bbcode_text = "[center]Play[/center]"
+text = "Play"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="PlayButton" type="TextureButton" parent="PlayButton"]
+show_behind_parent = true
+margin_left = 4.0
+margin_top = -0.109131
+margin_right = 593.0
+margin_bottom = 147.891
+texture_normal = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+margin_left = 5.0
+margin_top = 185.0
+margin_right = 1924.0
+margin_bottom = 366.0
+custom_fonts/normal_font = SubResource( 3 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_enabled = true
+bbcode_text = "[center]PREDICTED[/center]"
+text = "PREDICTED"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_top = 180.0
+margin_right = 1919.0
+margin_bottom = 361.0
+custom_fonts/normal_font = SubResource( 3 )
+bbcode_enabled = true
+bbcode_text = "[center]PREDICTED[/center]"
+text = "PREDICTED"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="button_up" from="ExitButton/ExitButton" to="." method="_on_ExitButton_button_up"]
